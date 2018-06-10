@@ -6,15 +6,32 @@ import java.util.HashMap;
 
 public class StudyGroup {
 
-    StudyGroup(Discipline discipline)
+    StudyGroup(Discipline discipline, String groupName)
     {
         this.discipline = discipline;
         markTable = new HashMap<Student, ArrayList<Mark>>();
+        this.groupName = groupName;
     }
 
-    String groupName = "defaultGroupName";
+    String groupName;
 
     Discipline discipline;
+
+    public static String getAllMarksFor(Student student, ArrayList<StudyGroup> sgList) {
+        val sgStudent = getGroupListFor(student, sgList);
+        if(sgList.isEmpty()) return "No such student";
+        val discilineMarkTable = new StringBuilder();
+        for (val sg:sgStudent)
+            discilineMarkTable.append(sg.toString()+": "+
+                    sg.getMarks(student).toString()+"\n");
+        return discilineMarkTable.toString();
+    }
+
+    public ArrayList<Mark> getMarks(Student student) {
+        if(!markTable.containsKey(student)) return null;
+        return markTable.get(student);
+    }
+
 
     public HashMap<Student, ArrayList<Mark>> getMarkTable() {
         return markTable;
@@ -63,4 +80,8 @@ public class StudyGroup {
         markTable.remove(student);
         return true;
     }
+    @Override
+    public String toString(){return groupName;}
+
+
 }

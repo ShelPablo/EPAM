@@ -6,5 +6,7 @@ public class Mark <T extends  Number>{
     public T getMark() {
         return mark;
     }
+    @Override
+    public String toString(){return mark.toString();}
 
 }
