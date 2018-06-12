@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"main_test"},{"p":"<Unnamed>","l":"Notepad"},{"p":"<Unnamed>","l":"RecordInNotepad"},{"p":"<Unnamed>","l":"RecordInNotepad.Importancy"},{"p":"<Unnamed>","l":"RecordInNotepad.NoteType"}]

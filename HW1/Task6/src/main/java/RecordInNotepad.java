@@ -8,13 +8,34 @@ import java.time.format.DateTimeFormatter;
 
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
+/**
+ * Запись для блокнота.
+ */
 public class RecordInNotepad {
+    /**
+     * Тема записи
+     */
     final String topic;
-    enum NoteType {TODO, INFO, DONE}
+
+    /**
+     * Тип записи (перечисление): что-то сделать (TОDO)/сделано (DONE)/просто информация (INFO)
+     */
+    public enum NoteType {TODO, INFO, DONE}
     NoteType noteType;
-    enum Importancy{THEHIGHEST, VERYHIGH, HIGH, NOTHIGH, LOW }
+
+    /**
+     * Важность записи (перечисление: THEHIGHEST, VERYHIGH, HIGH, NOTHIGH, LOW)
+     */
+    public enum Importancy{THEHIGHEST, VERYHIGH, HIGH, NOTHIGH, LOW }
     final Importancy importancy;
+    /**
+     *
+     * Дата и время, когда сделана запись
+     */
     LocalDateTime dateTimeLastChange;
+    /**
+     * Непосредственно заметка
+     */
     String note;
 
     @Override

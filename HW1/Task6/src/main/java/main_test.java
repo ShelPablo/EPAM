@@ -1,4 +1,15 @@
+
 public class main_test {
+
+    /**
+     * Класс для тестирования Блокнота
+     */
+    public main_test() {}
+
+    /**
+     * Точка входа
+     * @param args - аргументы командной строки
+     */
     public static void main(String[] args) {
         Notepad np = new Notepad("Java courses");
         np.addRecord(RecordInNotepad.NoteType.TODO, RecordInNotepad.Importancy.THEHIGHEST,
