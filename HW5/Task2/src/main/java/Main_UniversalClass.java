@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Vector;
+
 public class Main_UniversalClass {
     public static void main(String[] args) {
         UniversalClass uc_fail = new UniversalClass("src/main/resources/lemon.properties");

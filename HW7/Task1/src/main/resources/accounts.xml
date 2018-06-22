@@ -1,0 +1,18 @@
+<accounts>
+    <account>
+        <name>Father</name>
+        <balance>1000000</balance>
+    </account>
+    <account>
+        <name>Mother</name>
+        <balance>100000</balance>
+    </account>
+    <account>
+        <name>Sister</name>
+        <balance>100</balance>
+    </account>
+    <account>
+        <name>Brother</name>
+        <balance>0</balance>
+    </account>
+</accounts>
