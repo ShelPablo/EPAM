@@ -1,75 +1,66 @@
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.experimental.NonFinal;
+import lombok.ToString;
 import lombok.val;
-//import
-//import javax.xml.bind.*;
-//import javax.xml.bind.JAXBException;
-//import javax.xml.bind.Marshaller;
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.NodeList;
 
-
+import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.events.XMLEvent;
-import javax.xml.transform.stream.StreamSource;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.HashSet;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.*;
+import java.util.concurrent.*;
 
 public class Bank {
-    @NonFinal
-    HashSet<Account> accounts = new HashSet<Account>();;
-    //ConcurrentLinkedQueue clq;
+//    @NonFinal
+    HashMap<String, Account> accounts = new HashMap<>();
+    ConcurrentLinkedQueue<Transaction> transQ = new ConcurrentLinkedQueue<>();
 
-
-
-
-
-
-    public void loadTransactions()
+    @SneakyThrows
+    void executeTransactions()
     {
-        while (true)
+        ExecutorService ex = Executors.newCachedThreadPool();
+        for (val transaction:transQ) ex.execute(transaction);
+
+        ex.awaitTermination(10, TimeUnit.SECONDS);
+        ex.shutdown();
+    }
+
+
+
+    @SneakyThrows
+    void loadTransactionsFromXML(String filename)
+    {
+        Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder()
+                .parse(getClass().getResourceAsStream(filename));
+
+        NodeList t = doc.getElementsByTagName("transaction");
+
+        for(int i = 0; i<t.getLength(); i++)
         {
-//            clq.offer(readTransFromXML);
+            NamedNodeMap nnm = t.item(i).getAttributes();
+            String don = Optional.of(nnm.getNamedItem("donor").getNodeValue())
+                    .filter(x->accounts.containsKey(x))
+                    .orElseThrow(()->new TransactionException(String.format("Error in XML %s, donor", filename)));
+            String con = Optional.of(nnm.getNamedItem("consumer").getNodeValue())
+                    .filter(x->accounts.containsKey(x))
+                    .orElseThrow(()->new TransactionException(String.format("Error in XML %s, consumer", filename)));
+            Integer trans = Optional.of(Integer.valueOf(nnm.getNamedItem("transAmount").getNodeValue()))
+                    .orElseThrow(()->new TransactionException("Null transaction"));
+            addNewTransaction(don, con, trans);
         }
-//        clq.notifyAll();
     }
-
-    public void createAccount(String name, Integer balance)
-    {
-        val acc = new Account(name, balance);
-        if(!accounts.contains(acc)) accounts.add(acc);
-        else System.out.printf("Account with name %s already exists!\n", name);
-    }
-
-
-    //Callable<Boolean> Transaction = () -> {
-    //    return true;};
-
-    @AllArgsConstructor
-    class Transaction implements Callable<Boolean>
-    {
-        Account donor;
-        Account consumer;
-        Integer transAmount;
-
-        public Boolean call(){
-            donor.withdraw(transAmount);
-            consumer.deposit(transAmount);
-
-            return true;
-        }
-   }
 
     @SneakyThrows
     void loadAccountsFromXML(String filename)
     {
         XMLStreamReader reader = XMLInputFactory.newInstance()
-                                .createXMLStreamReader(
-                getClass().getResourceAsStream(filename));
+                .createXMLStreamReader(
+                        getClass().getResourceAsStream(filename));
 //                ClassLoader.getSystemResourceAsStream("accounts.xml")); // - альтернатива
+
         while (reader.hasNext()) {       // while not end of XML
             int event = reader.next();   // read next event
             if (event == XMLEvent.START_ELEMENT &&
@@ -79,13 +70,52 @@ public class Bank {
                 String acname = reader.getElementText();
                 reader.next(); reader.next();
                 Integer acbal = Integer.valueOf(reader.getElementText());
-                createAccount(acname, acbal);
+                addNewAccount(acname, acbal);
                 //System.out.println(acname+acbal);
             }
         }
-        System.out.println(accounts.toString());
     }
 
 
+    public void addNewAccount(String name, Integer balance)
+    {
+        if(!accounts.containsKey(name)) accounts.put(name, new Account(name, balance));
+        else System.out.printf("Account with name %s already exists!\n", name);
+    }
 
+
+    void addNewTransaction(String donor, String consumer, Integer transAmount)
+    {
+        if(donor == null || consumer == null || transAmount == null) throw new TransactionException("null");
+        if(!accounts.containsKey(donor) || !accounts.containsKey(consumer))
+            throw  new TransactionException(String.format("%s  or  %s", donor, consumer));
+        transQ.add(new Transaction(accounts.get(donor), accounts.get(consumer), transAmount));
+    }
+
+    @AllArgsConstructor
+    private class Transaction implements Runnable
+    {
+        Account donor;
+        Account consumer;
+        Integer transAmount;
+
+        public void run(){
+            donor.withdraw(transAmount);
+            consumer.deposit(transAmount);
+
+        }
+        @Override
+        public String toString(){
+            return String.format("\n%s -> %s : %d", donor.getName(), consumer.getName(), transAmount);
+        }
+
+
+    }
+    public String printAccounts(){
+        StringBuilder s = new StringBuilder("\nAccounts:\n");
+        for (val a:accounts.values()) s.append(a.toString());
+        return s.toString();
+    }
+
+    public String printTransQueue(){return transQ.toString();}
 }
