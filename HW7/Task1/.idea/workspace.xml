@@ -16,8 +16,8 @@
       <file leaf-file-name="BankTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BankTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+            <state relative-caret-position="198">
+              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -25,11 +25,29 @@
       <file leaf-file-name="Bank.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Bank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="93">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accounts.xsd" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/accounts.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accounts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/accounts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -37,43 +55,12 @@
       <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="15">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1694#1695#0" expanded="true" />
                 <element signature="e#1758#1759#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Counter.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/jdk.xml.dom/org/w3c/dom/css/Counter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Predicate.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/function/Predicate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/HashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15060">
-              <caret line="1061" column="21" selection-start-line="1061" selection-start-column="15" selection-end-line="1061" selection-end-column="21" />
-              <folding>
-                <element signature="e#41912#41913#0" expanded="true" />
-                <element signature="e#41976#41977#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,16 +101,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/accounts.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet" />
         <option value="$PROJECT_DIR$/src/main/java/NullTransactionException.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_1.snippet" />
         <option value="$PROJECT_DIR$/src/main/java/NoSuchAccountException.java" />
         <option value="$PROJECT_DIR$/src/main/resources/transactions.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Bank.java" />
         <option value="$PROJECT_DIR$/src/test/java/BankTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/accounts_xsd.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Bank.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/accounts.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/accounts.xsd" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -138,8 +134,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,13 +183,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="LombokPluginEnabledInProject" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/jaxb-api-2.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -224,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BankTest.MyExecutor">
+  <component name="RunManager" selected="JUnit.BankTest.validateAccountsXML">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -262,23 +258,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="BankTest.convertStringToUpperCaseStreams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Task1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BankTest" />
-      <option name="METHOD_NAME" value="convertStringToUpperCaseStreams" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration name="BankTest.myQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Task1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -303,6 +282,23 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BankTest" />
       <option name="METHOD_NAME" value="myStreamMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BankTest.validateAccountsXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Task1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="validateAccountsXML" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -353,18 +349,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.BankTest.BankPerformance" />
-      <item itemvalue="JUnit.BankTest.convertStringToUpperCaseStreams" />
       <item itemvalue="JUnit.BankTest.myStreamMap" />
       <item itemvalue="JUnit.BankTest.myQueue" />
       <item itemvalue="JUnit.BankTest.MyExecutor" />
+      <item itemvalue="JUnit.BankTest.validateAccountsXML" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BankTest.MyExecutor" />
+        <item itemvalue="JUnit.BankTest.validateAccountsXML" />
         <item itemvalue="JUnit.BankTest.BankPerformance" />
+        <item itemvalue="JUnit.BankTest.MyExecutor" />
         <item itemvalue="JUnit.BankTest.myQueue" />
         <item itemvalue="JUnit.BankTest.myStreamMap" />
-        <item itemvalue="JUnit.BankTest.convertStringToUpperCaseStreams" />
       </list>
     </recent_temporary>
   </component>
@@ -382,43 +378,43 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BankTest_BankPerformance - 2018.06.27 at 15h 39m 07s.xml">
-      <configuration name="BankTest.BankPerformance" configurationId="JUnit" />
+    <history-entry file="BankTest_validateAccountsXML - 2018.08.05 at 22h 27m 20s.xml">
+      <configuration name="BankTest.validateAccountsXML" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankTest_BankPerformance - 2018.06.27 at 15h 42m 08s.xml">
-      <configuration name="BankTest.BankPerformance" configurationId="JUnit" />
+    <history-entry file="BankTest_validateAccountsXML - 2018.08.05 at 22h 27m 55s.xml">
+      <configuration name="BankTest.validateAccountsXML" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankTest_BankPerformance - 2018.06.27 at 15h 42m 44s.xml">
-      <configuration name="BankTest.BankPerformance" configurationId="JUnit" />
+    <history-entry file="BankTest_validateAccountsXML - 2018.08.05 at 22h 35m 22s.xml">
+      <configuration name="BankTest.validateAccountsXML" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankTest_BankPerformance - 2018.06.27 at 15h 43m 51s.xml">
-      <configuration name="BankTest.BankPerformance" configurationId="JUnit" />
+    <history-entry file="BankTest_validateAccountsXML - 2018.08.05 at 22h 36m 48s.xml">
+      <configuration name="BankTest.validateAccountsXML" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankTest_BankPerformance - 2018.06.27 at 15h 44m 42s.xml">
-      <configuration name="BankTest.BankPerformance" configurationId="JUnit" />
+    <history-entry file="BankTest_validateAccountsXML - 2018.08.05 at 22h 38m 06s.xml">
+      <configuration name="BankTest.validateAccountsXML" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankTest_BankPerformance - 2018.06.27 at 15h 45m 24s.xml">
-      <configuration name="BankTest.BankPerformance" configurationId="JUnit" />
+    <history-entry file="BankTest_validateAccountsXML - 2018.08.05 at 23h 07m 38s.xml">
+      <configuration name="BankTest.validateAccountsXML" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankTest_BankPerformance - 2018.06.27 at 15h 47m 19s.xml">
-      <configuration name="BankTest.BankPerformance" configurationId="JUnit" />
+    <history-entry file="BankTest_validateAccountsXML - 2018.08.05 at 23h 08m 29s.xml">
+      <configuration name="BankTest.validateAccountsXML" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankTest_MyExecutor - 2018.06.27 at 15h 54m 10s.xml">
-      <configuration name="BankTest.MyExecutor" configurationId="JUnit" />
+    <history-entry file="BankTest_validateAccountsXML - 2018.08.05 at 23h 08m 49s.xml">
+      <configuration name="BankTest.validateAccountsXML" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankTest_MyExecutor - 2018.06.27 at 15h 54m 39s.xml">
-      <configuration name="BankTest.MyExecutor" configurationId="JUnit" />
+    <history-entry file="BankTest_validateAccountsXML - 2018.08.05 at 23h 09m 29s.xml">
+      <configuration name="BankTest.validateAccountsXML" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankTest_MyExecutor - 2018.06.27 at 15h 54m 53s.xml">
-      <configuration name="BankTest.MyExecutor" configurationId="JUnit" />
+    <history-entry file="BankTest_validateAccountsXML - 2018.08.05 at 23h 09m 35s.xml">
+      <configuration name="BankTest.validateAccountsXML" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1024" height="743" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32913387" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -429,7 +425,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24942264" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24902344" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -442,7 +438,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32913387" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -463,36 +458,59 @@
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Bank.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Bank.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Bank.java</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Bank.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Bank.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Bank.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Bank.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Bank.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15915">
-          <caret line="1061" column="21" selection-start-line="1061" selection-start-column="15" selection-end-line="1061" selection-end-column="21" />
-          <folding>
-            <element signature="e#41912#41913#0" expanded="true" />
-            <element signature="e#41976#41977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/transactions.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BankTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -500,24 +518,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15915">
-          <caret line="1061" column="21" selection-start-line="1061" selection-start-column="15" selection-end-line="1061" selection-end-column="21" />
-          <folding>
-            <element signature="e#41912#41913#0" expanded="true" />
-            <element signature="e#41976#41977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/function/Predicate.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/HashMap.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/transactions.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -559,20 +561,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/lang/NoSuchMethodException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml/org/w3c/dom/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4005">
-          <caret line="267" column="20" selection-start-line="267" selection-start-column="20" selection-end-line="267" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/lang/NoSuchMethodException.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml/org/w3c/dom/Node.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/transactions.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -599,13 +589,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/TreeSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6510">
-          <caret line="434" column="13" selection-start-line="434" selection-start-column="13" selection-end-line="434" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/TreeSet.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/BankTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -642,20 +626,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/concurrent/Callable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml/javax/xml/transform/dom/DOMResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2229">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/concurrent/Callable.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml/javax/xml/transform/dom/DOMResult.java" />
     <entry file="jar://$PROJECT_DIR$/src/main/java/jaxb-api-2.2.jar!/javax/xml/bind/ContextFinder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -670,124 +642,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml.bind/javax/xml/bind/JAXBContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="316" column="22" selection-start-line="316" selection-start-column="22" selection-end-line="316" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml/javax/xml/transform/dom/DOMSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml/javax/xml/stream/XMLStreamReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="524" column="16" selection-start-line="524" selection-start-column="16" selection-end-line="524" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="2596" column="18" selection-start-line="2596" selection-start-column="18" selection-end-line="2596" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="4308" column="16" selection-start-line="4308" selection-start-column="16" selection-end-line="4308" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="1186" column="31" selection-start-line="1186" selection-start-column="31" selection-end-line="1186" selection-end-column="31" />
-          <folding>
-            <element signature="e#55675#55676#0" expanded="true" />
-            <element signature="e#55761#55762#0" expanded="true" />
-            <element signature="e#56709#56710#0" expanded="true" />
-            <element signature="e#56753#56754#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/stream/StreamSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="657" column="22" selection-start-line="657" selection-start-column="22" selection-end-line="657" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml/org/w3c/dom/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3420">
-          <caret line="267" column="20" selection-start-line="267" selection-start-column="20" selection-end-line="267" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/accounts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/Optional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="169" column="45" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_1.snippet">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/lang/NoSuchMethodException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/TreeSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="434" column="13" selection-start-line="434" selection-start-column="13" selection-end-line="434" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15060">
-          <caret line="1061" column="21" selection-start-line="1061" selection-start-column="15" selection-end-line="1061" selection-end-column="21" />
-          <folding>
-            <element signature="e#41912#41913#0" expanded="true" />
-            <element signature="e#41976#41977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml.bind/javax/xml/bind/JAXBContext.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml/javax/xml/transform/dom/DOMSource.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml/javax/xml/stream/XMLStreamReader.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/Arrays.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/stream/Stream.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/stream/StreamSupport.java" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/Collection.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.xml/org/w3c/dom/Node.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/Optional.java" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_1.snippet" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/lang/NoSuchMethodException.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/TreeSet.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/HashMap.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/TransactionException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -806,44 +675,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/jdk.xml.dom/org/w3c/dom/css/Counter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/concurrent/TimeUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/concurrent/ExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/concurrent/ConcurrentLinkedQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="382" column="13" selection-start-line="382" selection-start-column="13" selection-end-line="382" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/function/Predicate.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/jdk.xml.dom/org/w3c/dom/css/Counter.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/concurrent/TimeUnit.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/concurrent/ExecutorService.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/concurrent/ConcurrentLinkedQueue.java" />
+    <entry file="file://$PROJECT_DIR$/Task1.iml" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/AccountXSD.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="15">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -853,10 +696,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/accounts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/accounts.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="93">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -865,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BankTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+        <state relative-caret-position="198">
+          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -927,6 +784,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -1,15 +1,19 @@
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.ToString;
 import lombok.val;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.NodeList;
 
+import javax.xml.XMLConstants;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.*;
+
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.events.XMLEvent;
+import java.io.File;
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -56,6 +60,10 @@ public class Bank {
     @SneakyThrows
     void loadAccountsFromXML(String filename)
     {
+        if(!validateAccountsXML(filename))
+        {
+            return;
+        }
         XMLStreamReader reader = XMLInputFactory.newInstance()
                 .createXMLStreamReader(
                         getClass().getResourceAsStream(filename));
@@ -74,6 +82,22 @@ public class Bank {
                 //System.out.println(acname+acbal);
             }
         }
+    }
+
+    //private
+    public boolean validateAccountsXML(String filename) {
+        try {
+            File xml = new File(getClass().getResource(filename).toURI());
+            SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI)
+                    .newSchema(new File(getClass().getResource("accounts.xsd").toURI()))
+                    .newValidator()
+                    .validate(new StreamSource(xml)
+                    );
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
     }
 
 
