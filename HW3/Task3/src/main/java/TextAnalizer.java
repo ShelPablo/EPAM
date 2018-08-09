@@ -1,11 +1,14 @@
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.SneakyThrows;
+import lombok.*;
 import lombok.experimental.NonFinal;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 @NoArgsConstructor
 public class TextAnalizer {
@@ -67,7 +70,47 @@ public class TextAnalizer {
         editedText = m.replaceAll("");
     }
 
+    @AllArgsConstructor
+    static class Reference
+    {
+        //String[] authors;
+        String authors;
+        String article;
+        String journal;
+        String  year_pages;
 
+        public static Reference parse(String s)
+        {
+
+            String[] buf = s.split("\\.");
+            if(buf.length<5) return null;
+            return new Reference(buf[1], buf[2], buf[3], buf[4]);
+        }
+
+        @Override
+        public String toString()
+        {
+            return String.format("%s:    ''%s''.    \n\t%s, %s",
+                    authors, article, journal, year_pages);
+        }
+
+    }
+
+
+
+
+    @SneakyThrows
+    public void referenceParser(String filename)
+    {
+        Path p = Paths.get(getClass().getResource(filename).toURI());
+        List<Reference> refList =  Files.lines(p)
+                .filter(x->!x.isEmpty())
+                .map(Reference::parse)
+                .peek(System.out::println)
+                .collect(Collectors.toList());
+        refList.forEach(System.out::println);
+
+    }
 
 
 

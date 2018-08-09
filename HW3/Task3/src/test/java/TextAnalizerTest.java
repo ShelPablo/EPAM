@@ -41,5 +41,10 @@ class TextAnalizerTest {
     }
 
 
+    @org.junit.jupiter.api.Test
+    void referenceParser() {
+        ta.referenceParser("references.txt");
 
+
+    }
 }
